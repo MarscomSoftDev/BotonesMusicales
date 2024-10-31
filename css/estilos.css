@@ -8,16 +8,16 @@
 
 body {
   align-items: center;
-  /*azul celeste */ 
-  background: #5a5bf3; 
-  background: -moz-linear-gradient(left, #5a5bf3 0%, #91e7d9 100%); 
-  background: -webkit-linear-gradient(left, #5a5bf3 0%,#91e7d9 100%); 
-  background: linear-gradient(to right, #5a5bf3 0%,#91e7d9 100%);
+  /*azul celeste */
+  background: #5a5bf3;
+  background: -moz-linear-gradient(left, #5a5bf3 0%, #91e7d9 100%);
+  background: -webkit-linear-gradient(left, #5a5bf3 0%, #91e7d9 100%);
+  background: linear-gradient(to right, #5a5bf3 0%, #91e7d9 100%);
 
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   min-height: 100vh;
 }
 
@@ -26,16 +26,15 @@ h1 {
   margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 600;
-  
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   padding: 10px;
 }
 
@@ -46,7 +45,7 @@ h1 {
   color: var(--rojo);
   cursor: pointer;
   height: 120px;
-  font-size: 1.75em;
+  font-size: 0.5em;
   font-weight: bold;
   line-height: 120px;
   text-align: center;
@@ -56,7 +55,7 @@ h1 {
 .tecla.activa,
 .tecla:active {
   background-color: var(--rojo);
-  border: 4px solid  var(--rojo);
+  border: 4px solid var(--rojo);
   box-shadow: 3px 3px 0 var(--rojo-oscuro) inset;
   color: var(--blanco);
   outline: none;
